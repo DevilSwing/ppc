@@ -1,0 +1,57 @@
+.modal {
+	 position: fixed;
+	 top: 200px;
+	 left: 10px;
+	 width: calc(100% - 20px);
+	 background-color: white;
+	 border-radius: 4px;
+	 overflow: hidden;
+	 height: 0;
+}
+.modal-links {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.modal.-active {
+	height: 300px;
+}
+.modal-map {
+	height: 200px;
+}
+.modal-links a {
+	width: 50px;
+	margin: 0 10px;
+}
+ 
+.modal-links img {
+	width: 50px;
+
+	
+}
+.modal-toggler {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+}
+
+.modal-toggler:before,
+.modal-toggler:after {
+	position: absolute;
+	display: block;
+	content: "";
+
+	width: 21px;
+	height: 1px;
+	background-color: #565656
+}
+.modal-toggler:before {
+	transform: rotate(45deg) translateY(50%);
+}
+.modal-toggler:after {
+	transform: rotate(-45deg) translateY(50%);
+}

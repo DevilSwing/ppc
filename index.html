@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/styles/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"> 
-
+	<link rel="stylesheet" type="text/css" href="assets/styles/modal.css"> 
 	<link rel="stylesheet" type="text/css" href="assets/styles/container.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
@@ -26,13 +26,13 @@
 						</div>                 
 							<ul class="nav-menu">
 								<li>
-									<a href="">About</a>
+									<a href="">Home</a>
 								</li>
 								<li>
 									<a href="">Works</a>
 								</li>
 								<li>
-									<a href="">Contect</a>
+									<a class="js-modal-toggler" href="">Contacts</a>
 								</li>
 								<li>
 									<a href="tel:89675984989">Call me now</a>
@@ -41,9 +41,10 @@
 				</div>
 				<div class="desktop-nav">
 					<div class="header-links">
-					<a href="">About</a>
+					<a href="">Home</a>
 					<a href="">Works</a>
-					<a href="">Contect</a>
+					<a class="js-modal-toggler" href="">Contacts</a>
+					
 					</div>
 					<a href="tel:89675984989">8 (967) 598-49-89</a>
 				</div>                                   
@@ -64,6 +65,25 @@
 		
 	</div>
 </section>
+<div class="modal">
+	<div class="content">
+		<div class="modal-links">
+			<a href="https://github.com/DevilSwing" class="js-icon-github">
+				<img src="assets/images/icon-github.svg">
+			</a>
+			<a href="https://e.mail.ru/messages/inbox/?back=1" class="js-icon-mail">
+				<img src="assets/images/icon-mail.png">
+			</a>
+			<a href="https://vk.com/id38561631" class="js-icon-vk">
+				<img src="assets/images/icon-vk.png">
+			</a>
+			<div  class="modal-toggler js-modal-toggler"></div>
+			</div>
+		<div class="modal-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9992.7145961933!2d139.7362988803629!3d35.66306221531996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z0KLQvtC60LjQviwg0K_Qv9C-0L3QuNGP!5e1!3m2!1sru!2sru!4v1520260776619" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		</div>
+</div>
 
 	<script
 		  src="http://code.jquery.com/jquery-3.3.1.min.js"

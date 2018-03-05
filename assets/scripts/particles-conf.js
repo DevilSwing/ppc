@@ -23,7 +23,7 @@ particlesJS("particles-js", {
         "nb_sides": 5
       },
       "image": {
-        "src": "assets/images/Antonio.png",
+        "src": "assets/images/github.png",
         "width": 100,
         "height": 100
       }
