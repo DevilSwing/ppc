@@ -10,10 +10,10 @@ $(document).ready(function() {
 		modal = $('.modal'),
 		mobileNav = $('.mobile-nav');
 		modalElems = [
-			'.js-icon-mail'
-			'.js-icon-vk'
-			'.js-icon-github'
-			'.modal-map'
+			'js-icon-mail',
+			'js-icon-vk',
+			'js-icon-github',
+			'.modal-map',
 			'.modal-toggler'
 		]
 
@@ -35,5 +35,16 @@ $(document).ready(function() {
 	modalToggler.click(function($event) {
 		event.preventDefault();
 		modal.toggleClass('-active');
+		mobileNav.toggleClass('-is-open');
 	})
+
+	$('.nav-toggler').click(function() {
+	
+	modal.removeClass('-active');
+	})
+
+
+
+
+
 });

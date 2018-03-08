@@ -2,7 +2,7 @@
 	height: calc(100vh - 60px);
 	display: flex;
 	align-items: center;
-	user-select:none
+	user-select:none;
 }
 .section-main h1 {
 	font-size: 40px;
