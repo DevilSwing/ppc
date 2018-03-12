@@ -1,8 +1,9 @@
 .modal {
 	 position: fixed;
 	 top: 200px;
-	 right: 100px;
-	 width: 600px;
+	 right: 76px;
+	 width: calc(100% - 20px);
+	 max-width: 600px;
 	 background-color: white;
 	 border-radius: 4px;
 	 overflow: hidden;
@@ -10,6 +11,8 @@
 	 transition: .4s;
 
 }
+
+
 .modal-links {
 	height: 100px;
 	display: flex;
@@ -25,10 +28,20 @@
 }
 .modal-map {
 	height: 200px;
+	transform: translateY(200%);
+	transition: .4s;
+}
+.modal-map.-active{
+	transform: translateY(0);
 }
 .modal-links a {
 	width: 50px;
 	margin: 0 10px;
+	transform: translateY(-200%);
+	transition: .4s;
+}
+.modal-links a.-active {
+	transform: translateY(0);
 }
  
 .modal-links img {
@@ -39,10 +52,15 @@
 .modal-toggler {
 	position: absolute;
 	top: 15px;
+	transform: translateX(200%);
 	right: 10px;
+	cursor: pointer;
 	width: 15px;
 	height: 15px;
 	transition: .4s;
+}
+.modal-toggler.-active{
+	transform: translateY(0);
 }
 
 .modal-toggler:before,

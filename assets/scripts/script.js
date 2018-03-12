@@ -10,12 +10,12 @@ $(document).ready(function() {
 		modal = $('.modal'),
 		mobileNav = $('.mobile-nav');
 		modalElems = [
-			'js-icon-mail',
-			'js-icon-vk',
-			'js-icon-github',
+			'.js-icon-mail',
+			'.js-icon-vk',
+			'.js-icon-github',
 			'.modal-map',
 			'.modal-toggler'
-		]
+		];
 
 
 
@@ -24,6 +24,9 @@ $(document).ready(function() {
 	})
 
 	$('.nav-toggler').click(function(){
+		if (modal.hasClass('-active')) {
+			showHideModal();
+		}
 		mobileNav.toggleClass('-is-open');
 	})
 
@@ -34,13 +37,26 @@ $(document).ready(function() {
 
 	modalToggler.click(function($event) {
 		event.preventDefault();
+		if (mobileNav.hasClass('-is-open')) {
+			mobileNav.removeClass('-is-open');
+		}
+		showHideModal();
+	});
+	function showHideModal(){	
 		modal.toggleClass('-active');
-		mobileNav.toggleClass('-is-open');
-	})
+		for (let i = 0; i < modalElems.length; i++) {
+			let delay = i * 200;
+			setTimeout(function(){
+			$(modalElems[i]).toggleClass('-active');
+		}, 400 + delay);
+	}
+}
+	
 
 	$('.nav-toggler').click(function() {
 	
 	modal.removeClass('-active');
+
 	})
 
 
