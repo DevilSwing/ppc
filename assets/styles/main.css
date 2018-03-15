@@ -30,12 +30,13 @@ canvas {
   position: absolute;
   display: block;
   vertical-align: bottom;
+  height: calc(100% - 60px) !important;
 }
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
+  
   width: 100%;
   /*background-image: url("../images/des.jpg");*/
   background-repeat: no-repeat;

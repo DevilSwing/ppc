@@ -1,0 +1,35 @@
+.section-project  {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.project-info h1{
+font-size: 35px;
+}
+.project-info p {
+
+}
+.project-info button {
+	border: none;
+	background-color: black;
+	color: yellow;
+	padding: 15px;
+	margin-top: 10px;
+}
+	
+
+.project-slider {
+	width: 100%;
+	overflow: hidden;
+}
+
+.project-slider > div {
+	width: 100%;
+}
+
+.project-slider img {
+	max-width: 100%;
+}

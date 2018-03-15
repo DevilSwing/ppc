@@ -60,6 +60,11 @@ $(document).ready(function() {
 	})
 
 
+  $(".project-slider").owlCarousel({
+  	items: 1,
+  	autoHeight: true
+  });
+
 
 
 
